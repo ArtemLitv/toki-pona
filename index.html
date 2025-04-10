@@ -54,6 +54,15 @@
             margin: auto;
             padding: 2em;
             flex: 1;
+            margin-left: 220px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        section {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 30px;
         }
 
         nav {
@@ -109,6 +118,10 @@
                 transform: translateX(0);
             }
 
+            main {
+                margin: auto;
+            }
+
             .menu-toggle {
                 display: block;
             }
@@ -134,7 +147,7 @@
         <li><a href="#slovar">Словарь</a></li>
     </ul>
 </nav>
-<main>
+<main id="main">
     <section id="vvedenie">
         <h2>📖 Введение</h2>
         <p><strong>Токипона</strong> — это искусственный язык, созданный Сонома Киссоном в 2001 году. У него всего ~120
@@ -914,6 +927,7 @@
 <script>
     function toggleMenu() {
         document.getElementById('toc').classList.toggle('open');
+        document.getElementById('main').classList.toggle('open');
     }
 </script>
 </body>
